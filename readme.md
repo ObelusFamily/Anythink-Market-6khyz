@@ -10,7 +10,6 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-    * install Docker
-    * run docker-compose up in thr root directory
-
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+1. Install [Docker](https://www.docker.com/)
+2. check if it works with `docker -v`
+3. run `docker-compose up` in the root directory
