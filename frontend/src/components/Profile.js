@@ -122,6 +122,8 @@ class Profile extends React.Component {
     const isUser =
       this.props.currentUser &&
       this.props.profile.username === this.props.currentUser.username;
+    
+    const userImage = profile.image == null ? "/placeholder.png" : profile.image 
 
     return (
       <div className="profile-page">
@@ -129,7 +131,7 @@ class Profile extends React.Component {
           <div className="row p-4 text-center">
             <div className="user-info col-xs-12 col-md-8 offset-md-2">
               <img
-                src={profile.image}
+                src={userImage}
                 className="user-img"
                 alt={profile.username}
               />
